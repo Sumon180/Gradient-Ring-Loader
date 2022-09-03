@@ -1,0 +1,51 @@
+html, body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: navy;
+}
+.outer{
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg,#feed07 0%,#fe6a50 5%,#ed00aa 15%,#2fe3fe 50%,#8900ff 100%);
+  border-radius: 50%;
+  
+}
+
+.inner{
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  background: navy;
+  align-items: center;
+  text-align: center;
+  line-height: 275px;
+  border-radius: 50%;
+  cursor: default;
+}
+.inner span{
+  font-size: 60px;
+  font-weight: 800;
+  background: linear-gradient(135deg,#feed07 0%,#fe6a50 5%,#ed00aa 15%,#2fe3fe 50%,#8900ff 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-size: 300px;
+}
+.outer.active-loader{
+  animation: rotate 1s ease infinite;
+}
+@keyframes rotate {
+  to{
+    transform: rotate(360deg);
+  }
+}
+.outer.active-loader2{
+  animation: rotate2 3s ease ;
+}
+@keyframes rotate2 {
+  to{
+    transform: rotate(360deg);
+  }
+}
